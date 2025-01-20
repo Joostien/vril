@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black; /* Fallback color if the video doesn't load */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ensure it fills the entire viewport width */
+    height: 100vh; /* Ensure it fills the entire viewport height */
+    overflow: hidden; /* Prevent overflow */
+    z-index: -1;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretch to fill the container horizontally */
+    height: 100%; /* Stretch to fill the container vertically */
+    object-fit: cover; /* Ensure it fills the screen while maintaining aspect ratio */
+}
+/* Home Logo */
+.home-logo {
+    position: fixed; /* Stays in the same position even when scrolling */
+    top: 50px; /* Distance from the top */
+    left: 300px; /* Distance from the left */
+    z-index: 10; /* Ensures it stays above other elements */
+  }
+  
+  .home-logo img {
+    width: 75px; /* Adjust the size of the logo */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: transform 0.3s ease;
+  }
+  
+  .home-logo img:hover {
+    transform: scale(1.2); /* Slightly enlarges the logo on hover */
+  }
+  

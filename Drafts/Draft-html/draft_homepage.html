@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$VRIL</title>
+  <link rel="stylesheet" href="css/homepage-styles.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop playsinline id="backgroundVideo">
+      <source src="assets/mainbackground.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Home Logo -->
+  <div class="home-logo">
+    <a href="homepage.html">
+      <img src="assets/logo.png" alt="Home Logo">
+    </a>
+  </div>
+
+  <!-- Homepage Content -->
+  <div class="homepage-content">
+    <!-- Title Section -->
+    <div class="title-section">
+      <div class="vril-title-container">
+        <img src="assets/Vril title.png" alt="$VRIL Title" class="vril-title">
+        <div class="spaceships">
+          <img src="assets/ufo.png" alt="Spaceship" class="spaceship left">
+          <img src="assets/ufo.png" alt="Spaceship" class="spaceship right">
+        </div>
+      </div>
+      <p class="contract-address">CA: 0x0000000000000000000001</p>
+    </div>
+
+    <div class="central-content">
+      <img src="assets/New vril.png" alt="Iron Cross" class="iron-cross">
+    
+      <!-- Music Controls -->
+      <div class="music-controls">
+        <button id="music-toggle" class="icon-button">&#9654;</button> <!-- Play Icon -->
+        <canvas id="visualizer"></canvas> <!-- Visualizer Canvas -->
+        <audio id="background-music" src="assets/Main Music.mp3"></audio>
+      </div>
+    
+      <p class="quote">"Remember what they took from us."</p>
+    </div>
+    
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="nft-button" onclick="location.href='nft.html';">NFTs</button>
+      <button class="buy-button" onclick="location.href='buy.html';">BUY</button>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a onclick="window.open('https://t.me/VRIL_on_sol', '_blank')">
+        <img src="assets/telegramlogo.png" alt="Telegram">
+      </a>
+      <a onclick="window.open('https://x.com/vril_on_sol?s=21', '_blank')">
+        <img src="assets/X_logo_2023_(white).png" alt="Twitter">
+      </a>
+      <a onclick="window.open('https://www.instagram.com/vrilonsol?igsh=MXA1bWdzaDk4aWQ0NQ%3D%3D&utm_source=qr', '_blank')">
+        <img src="assets/instagram.png" alt="Instagram">
+      </a>
+      <a onclick="window.open('https://dexscreener.com', '_blank')">
+        <img src="assets/dex+screener.png" alt="Custom">
+      </a>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="js/music.js"></script>
+</body>
+</html>
